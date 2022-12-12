@@ -9,7 +9,7 @@
     "version": "1.0",
     "load_order": "0",
     "folder": "utility-schedule",
-    "icon": "fa fa-anchor",
+    "icon": "fa fa-calendar",
     "require": {
         "corals-utility": "^4.0"
     }
