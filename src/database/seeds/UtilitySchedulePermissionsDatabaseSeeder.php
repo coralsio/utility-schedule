@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\Utility\Schedule\database\seeds;
 
-use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
 class UtilitySchedulePermissionsDatabaseSeeder extends Seeder

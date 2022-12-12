@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\Utility\Schedule\Providers;
 
-
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class UtilityAuthServiceProvider extends ServiceProvider

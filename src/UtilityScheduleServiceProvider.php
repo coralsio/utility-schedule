@@ -7,7 +7,6 @@ use Corals\Modules\Utility\Schedule\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Schedule\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class UtilityScheduleServiceProvider extends ServiceProvider
@@ -34,7 +33,6 @@ class UtilityScheduleServiceProvider extends ServiceProvider
     {
         $this->app->register(UtilityAuthServiceProvider::class);
         $this->app->register(UtilityRouteServiceProvider::class);
-
     }
 
     protected function registerMorphMaps()

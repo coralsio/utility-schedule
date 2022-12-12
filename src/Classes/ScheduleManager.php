@@ -5,21 +5,18 @@ namespace Corals\Modules\Utility\Schedule\Classes;
 use Carbon\Carbon;
 use Corals\Modules\Utility\Schedule\Models\Schedule as ScheduleModel;
 
-
 class ScheduleManager
 {
-
     protected $instance;
 
     public function __construct($instance)
     {
         $this->instance = $instance;
-
     }
 
     public function createSchedule($schedule, $user = null)
     {
-        if (!$user) {
+        if (! $user) {
             $user = user();
         }
         foreach ($schedule ?? [] as $day => $value) {
@@ -44,7 +41,7 @@ class ScheduleManager
                 $key => [
                     'start' => in_array($key, ['Sat', 'Sun']) ? 'Off' : '08',
                     'end' => in_array($key, ['Sat', 'Sun']) ? 'Off' : '17',
-                ]
+                ],
             ]);
         }
 
@@ -56,8 +53,8 @@ class ScheduleManager
                 ];
             }
         }
-        return $schedules;
 
+        return $schedules;
     }
 
     public function updateSchedule($schedule)
@@ -69,5 +66,4 @@ class ScheduleManager
             ]);
         }
     }
-
 }

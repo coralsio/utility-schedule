@@ -14,6 +14,5 @@ class UtilityScheduleMenuDatabaseSeeder extends Seeder
     public function run()
     {
         $utilities_menu_id = \DB::table('menus')->where('key', 'utility')->pluck('id')->first();
-
     }
 }

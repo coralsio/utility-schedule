@@ -78,7 +78,7 @@ class UtilityScheduleTest extends TestCase
                             'Thu' => ['start' => "08", 'end' => "17"],
                             'Fri' => ['start' => "08", 'end' => "17"],
                             'Sat' => ['start' => "Off", 'end' => "Off"],
-                            'Sun' => ['start' => "Off", 'end' => "Off"]
+                            'Sun' => ['start' => "Off", 'end' => "Off"],
                         ],
                     ];
 
