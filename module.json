@@ -1,0 +1,16 @@
+{
+    "code": "corals-utility-schedule",
+    "name": "Utility Schedule",
+    "author": "Corals",
+    "type": "module",
+    "description": "Utility Schedule",
+    "namespace": "Corals\\Modules\\Utility\\Schedule",
+    "provider": "UtilityScheduleServiceProvider",
+    "version": "1.0",
+    "load_order": "0",
+    "folder": "utility-schedule",
+    "icon": "fa fa-anchor",
+    "require": {
+        "corals-utility": "^4.0"
+    }
+}
