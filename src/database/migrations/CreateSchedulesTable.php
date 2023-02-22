@@ -2,14 +2,12 @@
 
 namespace Corals\Modules\Utility\Schedule\database\migrations;
 
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 class CreateSchedulesTable extends Migration
 {
-
     public function up()
     {
         Schema::create('utility_schedules', function (Blueprint $table) {

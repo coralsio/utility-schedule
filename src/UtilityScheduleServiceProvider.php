@@ -38,7 +38,6 @@ class UtilityScheduleServiceProvider extends BasePackageServiceProvider
     {
         $this->app->register(UtilityAuthServiceProvider::class);
         $this->app->register(UtilityRouteServiceProvider::class);
-
     }
 
     protected function registerMorphMaps()

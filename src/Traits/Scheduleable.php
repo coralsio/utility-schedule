@@ -2,19 +2,17 @@
 
 namespace Corals\Modules\Utility\Schedule\Traits;
 
-use Corals\Modules\Utility\Schedule\Models\Schedule;
-use Illuminate\Database\Eloquent\Model;
-use Corals\Modules\Utility\Schedule\Models\Schedule as ScheduleModel;
 use Carbon\Carbon;
+use Corals\Modules\Utility\Schedule\Models\Schedule;
+use Corals\Modules\Utility\Schedule\Models\Schedule as ScheduleModel;
+use Illuminate\Database\Eloquent\Model;
 
 trait Scheduleable
 {
     public static function bootScheduleable()
     {
         static::deleted(function (Model $deletedModel) {
-
             $deletedModel->schedules()->delete();
-
         });
     }
 
@@ -39,13 +37,9 @@ trait Scheduleable
             })->first();
 
         if ($open) {
-
             return true;
         } else {
-
             return false;
         }
     }
-
-
 }
