@@ -8,7 +8,6 @@ use Corals\Modules\Utility\Schedule\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Schedule\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Foundation\AliasLoader;
 
 class UtilityScheduleServiceProvider extends BasePackageServiceProvider
 {
