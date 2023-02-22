@@ -2,17 +2,22 @@
 
 namespace Corals\Modules\Utility\Schedule;
 
+use Corals\Foundation\Providers\BasePackageServiceProvider;
 use Corals\Modules\Utility\Schedule\Models\Schedule;
 use Corals\Modules\Utility\Schedule\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Schedule\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider;
 
-class UtilityScheduleServiceProvider extends ServiceProvider
+class UtilityScheduleServiceProvider extends BasePackageServiceProvider
 {
-    public function boot()
+    /**
+     * @var
+     */
+    protected $packageCode = 'corals-utility-schedule';
+
+    public function bootPackage()
     {
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'utility-schedule');
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'utility-schedule');
@@ -27,10 +32,9 @@ class UtilityScheduleServiceProvider extends ServiceProvider
         ]);
 
         $this->registerMorphMaps();
-        $this->registerModulesPackages();
     }
 
-    public function register()
+    public function registerPackage()
     {
         $this->app->register(UtilityAuthServiceProvider::class);
         $this->app->register(UtilityRouteServiceProvider::class);
@@ -44,7 +48,7 @@ class UtilityScheduleServiceProvider extends ServiceProvider
         ]);
     }
 
-    protected function registerModulesPackages()
+    public function registerModulesPackages()
     {
         Modules::addModulesPackages('corals/utility-schedule');
     }
