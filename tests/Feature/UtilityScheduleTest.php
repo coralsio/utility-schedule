@@ -3,10 +3,10 @@
 namespace Tests\Feature;
 
 use Corals\Modules\Directory\Models\Listing;
-use Corals\Utility\Category\Models\Category;
-use Corals\Utility\Location\Models\Location;
 use Corals\Settings\Facades\Modules;
 use Corals\User\Models\User;
+use Corals\Utility\Category\Models\Category;
+use Corals\Utility\Location\Models\Location;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\Auth;
 use Tests\TestCase;
