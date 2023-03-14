@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\Schedule\Traits;
+namespace Corals\Utility\Schedule\Traits;
 
 use Carbon\Carbon;
-use Corals\Modules\Utility\Schedule\Models\Schedule;
-use Corals\Modules\Utility\Schedule\Models\Schedule as ScheduleModel;
+use Corals\Utility\Schedule\Models\Schedule;
+use Corals\Utility\Schedule\Models\Schedule as ScheduleModel;
 use Illuminate\Database\Eloquent\Model;
 
 trait Scheduleable

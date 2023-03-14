@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Schedule\Classes;
+namespace Corals\Utility\Schedule\Classes;
 
 use Carbon\Carbon;
-use Corals\Modules\Utility\Schedule\Models\Schedule as ScheduleModel;
+use Corals\Utility\Schedule\Models\Schedule as ScheduleModel;
 
 class ScheduleManager
 {

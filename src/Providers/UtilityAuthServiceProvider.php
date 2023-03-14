@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Schedule\Providers;
+namespace Corals\Utility\Schedule\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 

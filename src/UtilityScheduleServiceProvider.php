@@ -1,11 +1,11 @@
 <?php
 
-namespace Corals\Modules\Utility\Schedule;
+namespace Corals\Utility\Schedule;
 
 use Corals\Foundation\Providers\BasePackageServiceProvider;
-use Corals\Modules\Utility\Schedule\Models\Schedule;
-use Corals\Modules\Utility\Schedule\Providers\UtilityAuthServiceProvider;
-use Corals\Modules\Utility\Schedule\Providers\UtilityRouteServiceProvider;
+use Corals\Utility\Schedule\Models\Schedule;
+use Corals\Utility\Schedule\Providers\UtilityAuthServiceProvider;
+use Corals\Utility\Schedule\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Database\Eloquent\Relations\Relation;
 

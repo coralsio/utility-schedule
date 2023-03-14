@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\Schedule\Providers;
+namespace Corals\Utility\Schedule\Providers;
 
 use Corals\Foundation\Providers\BaseUninstallModuleServiceProvider;
-use Corals\Modules\Utility\Schedule\database\migrations\CreateSchedulesTable;
-use Corals\Modules\Utility\Schedule\database\seeds\UtilityScheduleDatabaseSeeder;
+use Corals\Utility\Schedule\database\migrations\CreateSchedulesTable;
+use Corals\Utility\Schedule\database\seeds\UtilityScheduleDatabaseSeeder;
 
 class UninstallModuleServiceProvider extends BaseUninstallModuleServiceProvider
 {

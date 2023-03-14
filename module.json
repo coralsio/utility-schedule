@@ -4,7 +4,7 @@
     "author": "Corals",
     "type": "module",
     "description": "Utility Schedule",
-    "namespace": "Corals\\Modules\\Utility\\Schedule",
+    "namespace": "Corals\\Utility\\Schedule",
     "provider": "UtilityScheduleServiceProvider",
     "version": "1.0",
     "load_order": "0",

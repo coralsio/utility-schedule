@@ -3,8 +3,8 @@
 namespace Tests\Feature;
 
 use Corals\Modules\Directory\Models\Listing;
-use Corals\Modules\Utility\Category\Models\Category;
-use Corals\Modules\Utility\Location\Models\Location;
+use Corals\Utility\Category\Models\Category;
+use Corals\Utility\Location\Models\Location;
 use Corals\Settings\Facades\Modules;
 use Corals\User\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -47,7 +47,7 @@ class UtilityScheduleTest extends TestCase
 
             foreach ($myClasses as $class) {
                 $traits = class_uses($class);
-                if (array_search('Corals\\Modules\\Utility\\Schedule\\Traits\\Scheduleable', $traits)) {
+                if (array_search('Corals\\Utility\\Schedule\\Traits\\Scheduleable', $traits)) {
                     $this->model = $class;
                     $this->prefix = $moduleDirectory['prefix'];
                     $this->category = Category::query()->create([

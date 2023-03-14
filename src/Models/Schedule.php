@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Schedule\Models;
+namespace Corals\Utility\Schedule\Models;
 
 use Corals\Foundation\Models\BaseModel;
 use Corals\User\Models\User;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Schedule\database\seeds;
+namespace Corals\Utility\Schedule\database\seeds;
 
 use Illuminate\Database\Seeder;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\Schedule\Providers;
+namespace Corals\Utility\Schedule\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
@@ -14,7 +14,7 @@ class UtilityRouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Corals\Modules\Utility\Schedule\Http\Controllers';
+    protected $namespace = 'Corals\Utility\Schedule\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
